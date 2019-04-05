@@ -1,0 +1,83 @@
+body{
+	background-color: lightblue;
+}
+
+#main-box{
+	background-color: #273449;
+	color: white;
+	width : 40%;
+	margin : 100px auto;
+}
+
+h1{
+	padding: 10px;
+	text-align: center; 
+}
+
+
+.done{
+	text-decoration: line-through;
+	color: grey;
+}
+
+input{
+	width: 100%;
+	line-height: 40px;
+	margin: 0;
+	padding: 0 35px;
+	box-sizing: border-box;
+	border: 1px solid rgba(255, 255, 255, .1);
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+}
+
+.fading{
+	opacity: 0;
+	height: 10px;
+}
+
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	line-height: 40px;
+	list-style-type: none;
+
+}
+li:nth-of-type(odd){
+	background: #40516d;
+}
+
+li span{
+	background-color: #e58479;
+	margin: 0;
+	font-size:16px;
+	padding: 12px 10px;
+	visibility: hidden;
+	opacity: 0;
+}
+
+li:hover span{
+	visibility: visible;
+	opacity: 1;
+	transition : opacity .5s linear;
+}
+
+#plusBtn{
+	float: right;
+}
+
+#plusBtn:hover{
+	color: grey;
+}
+
+
+/* On screens that are 600px or less, set the width of the main box */
+@media screen and (max-width: 700px) {
+  #main-box {
+    width: 90%;
+  }
+}
